@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="input_area">
+        <div id="info"></div>
+        <form action="">
+            <h1>Regisztráció</h1>
+            <input type="text" id="name" placeholder="Név">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="password" placeholder="Jelszó">
+            <input type="text" id="password_confirmation" placeholder="Jelszó megerősítése">
+            <button>Küldés</button>
+        </form>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("body").fadeIn(2500);
+        });
+
+
+        $("input").mouseenter(function () {
+            $(this).css("background-color", "#cccccc");
+        });
+        $("input").mouseleave(function () {
+            $(this).css("background-color", "#ffffff");
+        });
+        $("button").mouseenter(function () {
+            $(this).css("transition", "all 0.3s ease-in-out");
+            $(this).css("scale", "1.1");
+        })
+        $("button").mouseleave(function () {
+            $(this).css("transition", "all 0.3s ease-in-out");
+            $(this).css("scale", "1");
+        })
+
+
+    </script>
+
+</body>
+
+</html>
